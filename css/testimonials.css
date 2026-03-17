@@ -1,0 +1,55 @@
+/* ============= TEST ============= */
+
+.clients-list {
+	flex-wrap: nowrap;
+	gap: 84px;
+	width: 1440px;
+}
+
+.clients-item {
+	width: calc((100% - 84px * 5) / 6);
+}
+
+/* ============= TEST1 ============= */
+
+.test1-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	width: 1456px;
+	gap: 84px;
+	text-align: left;
+}
+
+.test1-list {
+	flex-wrap: wrap;
+	width: 686px;
+	column-gap: 60px;
+	row-gap: 60px;
+}
+
+.test1-wrapper-item {
+	width: calc((100% - 84px) / 2);
+}
+
+.test1-item {
+	width: calc((100% - 60px * 2) / 3);
+}
+
+.test1-content-wrapper {
+	padding: 71px 64px;
+	border: 1px solid var(--decoration-color);
+	border-top: none;
+}
+
+.article-title {
+	margin-bottom: 24px;
+	font-size: 24px;
+	line-height: 1.5;
+}
+.article-text {
+	font-size: 18px;
+	line-height: 1.67;
+}
+
+/* ============= TEST2 ============= */

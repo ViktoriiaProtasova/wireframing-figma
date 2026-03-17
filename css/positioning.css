@@ -1,0 +1,35 @@
+body {
+	padding: 20px;
+}
+
+.card-wrapper {
+	width: 370px;
+	margin: 0 auto;
+}
+
+.content-wrapper {
+	padding: 24px 20px;
+	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+		0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.thumb {
+	position: relative;
+}
+
+.article-actions {
+	display: flex;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.article-title {
+	margin-bottom: 10px;
+}
+
+.article-icon {
+	width: 34px;
+	height: 34px;
+}
