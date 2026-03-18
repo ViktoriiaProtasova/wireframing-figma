@@ -21,47 +21,52 @@
 		<link rel="stylesheet" href="./css/positioning.css" />
 	</head>
 	<body>
-		<article class="card section">
-			<div class="thumb">
-				<img
-					src="https://picsum.photos/id/684/600/400"
-					alt=""
-					width="400"
-					height="220"
-				/>
-				<div class="article-actions">
-					<button>
-						<svg class="article-icon">
-							<use href="./images/positioning-sprite.svg#icon-heart"></use>
-						</svg></button
-					><button>
-						<svg class="article-icon">
-							<use href="./images/positioning-sprite.svg#icon-cart"></use>
-						</svg></button
-					><button>
-						<svg class="article-icon">
-							<use href="./images/positioning-sprite.svg#icon-share"></use>
-						</svg>
-					</button>
+		<section class="section">
+			<article class="card">
+				<div class="thumb">
+					<img
+						src="https://picsum.photos/id/684/600/400"
+						alt=""
+						width="400"
+						height="220"
+					/>
+
+					<div class="article-overlay">
+						<div class="article-actions">
+							<button>
+								<svg class="article-icon">
+									<use href="./images/positioning-sprite.svg#icon-heart"></use>
+								</svg></button
+							><button>
+								<svg class="article-icon">
+									<use href="./images/positioning-sprite.svg#icon-cart"></use>
+								</svg></button
+							><button>
+								<svg class="article-icon">
+									<use href="./images/positioning-sprite.svg#icon-share"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="content-wrapper">
-				<h2 class="article-title">Sed ut perspiciatis</h2>
-				<p class="article-text">
-					Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-				</p>
-			</div>
-		</article>
+				<div class="content-wrapper">
+					<h2 class="article-title">Sed ut perspiciatis</h2>
+					<p class="article-text">
+						Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+					</p>
+				</div>
+			</article>
+		</section>
 
 		<section class="section">
-			<p>
+			<p class="modal-item">
 				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet expedita
 				quos cum nam ratione ullam consequatur natus a nesciunt vel! Aut, at.
 				Sunt amet consectetur ex harum aspernatur, distinctio in!
 			</p>
 
-			<button data-open-modal>Open modal</button>
-			<p>
+			<button class="modal-item" data-open-modal>Open modal</button>
+			<p class="modal-item">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea voluptatum
 				minus officiis amet fugiat ipsa rem corrupti vel fuga ullam? Mollitia
 				repellendus ducimus nihil. Eos optio vel cumque nesciunt culpa.
@@ -142,6 +147,21 @@
 				</svg>
 			</div>
 		</section>
+
+		<section class="section">
+			<ul class="menu-test2">
+				<li class="menu-item-test2">
+					<a href="" class="menu-link-test2">Content</a>
+				</li>
+				<li class="menu-item-test2">
+					<a href="" class="menu-link-test2">Content</a>
+				</li>
+				<li class="menu-item-test2">
+					<a href="" class="menu-link-test2">Content</a>
+				</li>
+			</ul>
+		</section>
+
 		<script>
 			const refs = {
 				openModalBtn: document.querySelector('[data-open-modal]'),
