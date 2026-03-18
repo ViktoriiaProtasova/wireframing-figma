@@ -62,3 +62,114 @@ button {
 	width: 34px;
 	height: 34px;
 }
+
+.section {
+	padding: 30px 30px;
+}
+
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background-color: rgba(8, 60, 111, 0.5);
+}
+
+.backdrop.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 400px;
+	min-height: 200px;
+	padding: 60px;
+	background-color: #fff;
+}
+
+.modal p {
+	margin-bottom: 32px;
+}
+
+.menu {
+	display: flex;
+	gap: 20px;
+	margin-bottom: 20px;
+}
+
+.menu-item {
+	position: relative;
+	outline: 2px solid tomato;
+}
+
+.menu-item:hover .submenu {
+	opacity: 1;
+}
+
+.menu-link {
+	display: block;
+	padding: 24px;
+	background-color: cadetblue;
+	color: #fff;
+}
+
+.submenu {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	min-width: 100%;
+	background-color: antiquewhite;
+	opacity: 0;
+}
+
+.submenu a {
+	display: block;
+	padding: 8px;
+}
+
+.button-wrapper {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 160px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.subscribe-btn {
+	padding: 14px 30px;
+	width: 100%;
+	text-align: right;
+}
+
+.button-wrapper .before,
+.button-wrapper .after {
+	position: absolute;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+
+	left: 18px;
+	top: 12px;
+
+	transition: transform 250ms;
+}
+
+.button-wrapper .after {
+	transform: translateY(35px);
+}
+
+.button-wrapper:hover .before {
+	transform: translateY(-35px);
+}
+
+.button-wrapper:hover .after {
+	transform: translateY(0px);
+}

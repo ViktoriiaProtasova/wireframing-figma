@@ -21,7 +21,7 @@
 		<link rel="stylesheet" href="./css/positioning.css" />
 	</head>
 	<body>
-		<article class="card">
+		<article class="card section">
 			<div class="thumb">
 				<img
 					src="https://picsum.photos/id/684/600/400"
@@ -52,5 +52,111 @@
 				</p>
 			</div>
 		</article>
+
+		<section class="section">
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet expedita
+				quos cum nam ratione ullam consequatur natus a nesciunt vel! Aut, at.
+				Sunt amet consectetur ex harum aspernatur, distinctio in!
+			</p>
+
+			<button data-open-modal>Open modal</button>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea voluptatum
+				minus officiis amet fugiat ipsa rem corrupti vel fuga ullam? Mollitia
+				repellendus ducimus nihil. Eos optio vel cumque nesciunt culpa.
+			</p>
+			<div class="backdrop is-hidden" data-backdrop>
+				<div class="modal">
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
+						voluptates odit esse quidem nemo voluptas nulla sed repellat
+						corporis ratione! Iste consequatur pariatur in quidem nesciunt,
+						incidunt quo repudiandae ab iusto, labore, accusamus ipsam delectus
+						reiciendis error impedit quaerat nulla tempora eveniet. Minus
+						blanditiis est delectus, obcaecati velit harum necessitatibus
+						assumenda enim. Est harum nisi mollitia quis autem non odit.
+					</p>
+					<button data-close-modal>Close modal</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<ul class="menu">
+				<li class="menu-item">
+					<a href="" class="menu-link">Category1</a>
+					<ul class="submenu">
+						<li><a href="">SubCategory1</a></li>
+						<li><a href="">SubCategory2</a></li>
+						<li><a href="">SubCategory3</a></li>
+					</ul>
+				</li>
+				<li class="menu-item">
+					<a href="" class="menu-link">Category2</a>
+					<ul class="submenu">
+						<li><a href="">SubCategory4</a></li>
+						<li><a href="">SubCategory5</a></li>
+						<li><a href="">SubCategory6</a></li>
+					</ul>
+				</li>
+				<li class="menu-item">
+					<a href="" class="menu-link">Category3</a>
+					<ul class="submenu">
+						<li><a href="">SubCategory7</a></li>
+						<li><a href="">SubCategory8</a></li>
+						<li><a href="">SubCategory9</a></li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+				voluptas non officiis minima cupiditate quasi obcaecati modi, veniam
+				enim numquam autem? Eius consectetur voluptas dignissimos consequatur
+				nihil delectus veritatis in asperiores rerum maiores. Expedita beatae
+				officiis assumenda cum facilis illum? Veniam deserunt velit odio iusto,
+				laboriosam perspiciatis similique laudantium dolorem a aliquam ipsam
+				explicabo numquam voluptatibus exercitationem labore! Ad soluta
+				distinctio maiores eligendi ducimus! Possimus cumque aperiam maiores,
+				impedit quae fugit doloremque eaque molestias. Voluptate, veritatis?
+				Veritatis possimus impedit, error modi laudantium ratione alias nisi
+				aspernatur blanditiis, tempora voluptatem, animi ipsa saepe et
+				architecto dolores! Est, repellendus praesentium! Aspernatur obcaecati
+				iure, a aliquid facilis mollitia! Est accusantium, cumque sint optio
+				possimus blanditiis veniam ratione quisquam nesciunt alias! Hic
+				excepturi sequi quibusdam nulla nihil nam dicta, aperiam voluptatibus
+				eveniet dolorem aut molestias vero temporibus necessitatibus accusamus
+				et quas soluta facere id beatae numquam quos laboriosam modi? Nobis
+				voluptatum itaque expedita repellendus.
+			</p>
+		</section>
+
+		<section class="section">
+			<div class="button-wrapper">
+				<button class="subscribe-btn">Subscribe</button>
+				<svg class="icon before">
+					<use href="./images/symbol-defs.svg#icon-behance"></use>
+				</svg>
+				<svg class="icon after">
+					<use href="./images/symbol-defs.svg#icon-dribbble"></use>
+				</svg>
+			</div>
+		</section>
+		<script>
+			const refs = {
+				openModalBtn: document.querySelector('[data-open-modal]'),
+				closeModalBtn: document.querySelector('[data-close-modal]'),
+				backdrop: document.querySelector('[data-backdrop]'),
+			};
+
+			refs.openModalBtn.addEventListener('click', toggleModal);
+			refs.closeModalBtn.addEventListener('click', toggleModal);
+
+			refs.backdrop.addEventListener('click', logBackdropClick);
+
+			function toggleModal() {
+				refs.backdrop.classList.toggle('is-hidden');
+			}
+		</script>
 	</body>
 </html>
