@@ -151,44 +151,40 @@ button {
 	padding: 8px;
 }
 
-.button-wrapper {
+.subscribe-btn {
 	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	display: block;
 	width: 160px;
 	margin: 0 auto;
+	padding: 14px 30px;
+
+	text-align: right;
+
 	overflow: hidden;
 }
 
-.subscribe-btn {
-	padding: 14px 30px;
-	width: 100%;
-	text-align: right;
-}
-
-.button-wrapper .before,
-.button-wrapper .after {
+.subscribe-btn .before,
+.subscribe-btn .after {
 	position: absolute;
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-
 	left: 18px;
 	top: 12px;
+
+	display: block;
+	width: 20px;
+	height: 20px;
 
 	transition: transform 250ms;
 }
 
-.button-wrapper .after {
+.subscribe-btn .after {
 	transform: translateY(35px);
 }
 
-.button-wrapper:hover .before {
+.subscribe-btn:hover .before {
 	transform: translateY(-35px);
 }
 
-.button-wrapper:hover .after {
+.subscribe-btn:hover .after {
 	transform: translateY(0px);
 }
 
